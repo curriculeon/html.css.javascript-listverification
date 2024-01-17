@@ -3,7 +3,7 @@ const checkListsExist = () => {
     let listsExist = true;
   
     listTypes.forEach(listType => {
-      const list = document.querySelector(`ul[style*='list-style-type: ${listType}']`);
+      const list = document.querySelector(`ul[style*='list-style-type:${listType}']`);
       const orderedList = document.querySelector(`ol[type='${listType}']`);
   
       const message = `List with list-style-type:${listType} or type ${listType}`;
